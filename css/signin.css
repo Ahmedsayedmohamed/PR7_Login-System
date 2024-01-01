@@ -1,0 +1,123 @@
+/* ############/ Google Fonts links /############ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Montserrat:wght@300;400&family=Roboto&display=swap");
+
+/* ############/ Roots & Global Rules /############ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: px;
+}
+
+body {
+  background: linear-gradient(to right, #2e4044, #395052, #2b4346);
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.ff-mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.inputsColor{
+  color: #acaaaa;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+/* =================/ Form Input focus /================= */
+
+.form-control:focus {
+  border-color: transparent !important;
+  border-bottom: #c9c9c9 1px solid !important;
+  box-shadow: none;
+}
+
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #acaaaa !important ;
+  font-size: 13px !important;
+}
+
+/* =================/ start Navbar /================= */
+
+nav a {
+  color: #fff !important;
+  border: 1px solid #c9c9c9d2 !important;
+  transition: all .5s !important;
+}
+
+nav a:hover {
+  color: #000 !important;
+  border: 1px solid transparent !important;
+  background-color: #c9c9c9d2 !important;
+}
+
+/* =================/ start landing /================= */
+
+header input {
+  background-color: transparent !important;
+  border-width: 0 !important;
+  border-bottom: #c9c9c9d2 1px solid !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  padding-left: 0 !important;
+}
+
+header a {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  color: #000 ;
+  border: 1px solid #c9c9c9d2 ;
+  background-color: #c9c9c9d2 ;
+  transition: all .5s;
+}
+
+header a:hover{
+  background-color: transparent ;
+  color: #fff ;
+  border: 1px solid #c9c9c9d2 ;
+}

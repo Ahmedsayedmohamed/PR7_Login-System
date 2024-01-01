@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=====================/ site info /=====================-->
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=====================/ Font Awesome Library /=====================-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--=====================/ Bootstrap CSS links /=====================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--=====================/ Main Template CSS File /=====================-->
+    <link rel="stylesheet" href="css/signin.css" />
+  </head>
+  <body>
+    <!-- =====================/ Start Navbar /===================== -->
+    <nav>
+      <div class="container">
+        <div
+          class="content ff-mont pt-5 d-flex justify-content-between align-items-center"
+        >
+          <h1>Logo</h1>
+          <div class="rightCol">
+            <span class="pe-3">Not a member ? </span>
+            <a href="signup.html" class="btn shadow">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- =====================/ Start landing /===================== -->
+    <header id="landing" class="min-vh-100">
+      <h1 class="logo text-center my-5 ff-mont fw-300">Sign in</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-8 col-lg-5 m-auto">
+            <div class="signinInputs">
+              <!-- =====================/ Email input for login & its Message /===================== -->
+              <input
+                id="emailInput"
+                type="email"
+                placeholder="E-mail@exa.com"
+                class="form-control mb-4"
+              />
+
+              <div
+                id="MessageEmailInfo"
+                class="form-text mb-3 inputsColor d-none"
+              >
+                This mail isn't exist
+              </div>
+
+              <!-- =====================/ pass input for login & its Message /===================== -->
+              <input
+                id="passInput"
+                type="password"
+                placeholder="Password"
+                class="form-control mb-4"
+              />
+
+              <div
+                id="MessagePassInfo"
+                class="form-text mb-3 inputsColor d-none"
+              >
+                Your password isn't correct
+              </div>
+
+              <!-- =====================/ Sign in Button /===================== -->
+              <a id="singIn"  class="my-5 px-5 rounded-1 py-1 shadow pointer ">Sign in</a>
+
+              <!-- =====================/ Alerts for user /===================== -->
+              <div id="emailPassError" class="alert alert-danger d-none">
+                The e-mail & the password was wrong
+              </div>
+              <div id="emailPassNull" class="alert alert-danger d-none">
+                Please, Enter your email & password
+              </div>
+              <div id="emailError" class="alert alert-danger d-none">
+                The e-mail was wrong
+              </div>
+              <div id="passError" class="alert alert-danger d-none">
+                The password was wrong
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--=====================/ Bootstrap js link /===================== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--=====================/ Font Awesome js link /===================== -->
+    <script src="js/all.min.js"></script>
+    <!--=====================/ Main js link /===================== -->
+    <script src="js/signin.js"></script>
+  </body>
+</html>

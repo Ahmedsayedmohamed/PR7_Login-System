@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=====================/ site info /=====================-->
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=====================/ Font Awesome Library /=====================-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--=====================/ Bootstrap CSS links /=====================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--=====================/ Main Template CSS File /=====================-->
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <!-- =====================/ Start Navbar /===================== -->
+    <nav>
+      <div class="container">
+        <div
+          class="content ff-mont pt-5 d-flex justify-content-between align-items-center"
+        >
+          <h1>Logo</h1>
+          <div class="rightCol">
+            <span class="pe-3">Have an account ? </span>
+            <a id="signIn" href="index.html" class="btn shadow">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- =====================/ Start landing /===================== -->
+    <header id="landing" class="min-vh-100">
+      <h1 class="logo text-center my-5 ff-mont fw-300">Sign up</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-8 col-lg-5 m-auto">
+            <!-- =====================/ Inputs /===================== -->
+            <div class="signupInputs">
+              <!-- =====================/ Name input /===================== -->
+              <input
+                id="inputName"
+                type="text"
+                placeholder="Name"
+                class="form-control mb-4"
+              />
+              <div
+                id="MessageNameInfo"
+                class="form-text mb-3 inputsColor d-none"
+              >
+                Your name should contain 3 or more than one character only [a-z]
+                <br />ex: Ahmed Mohamed
+              </div>
+
+              <!-- =====================/ E-mail input /===================== -->
+              <input
+                id="inputEmail"
+                type="email"
+                placeholder="E-mail@exa.com"
+                class="form-control mb-4"
+              />
+              <div
+                id="MessageEmailInfo"
+                class="form-text mb-3 inputsColor d-none"
+              >
+                Your e-mail should be valid
+                <br />ex: asayed565565@gmail.com
+              </div>
+              <div
+              id="messageDuplicateEmail"
+              class="form-text mb-3 inputsColor d-none"
+            >
+            This email is already exist
+            </div>
+
+              <!-- =====================/ Pass input /===================== -->
+              <input
+                id="inputPassword"
+                type="password"
+                placeholder="Password"
+                class="form-control mb-4"
+              />
+              <div
+                id="MessagePassInfo"
+                class="form-text mb-3 inputsColor d-none"
+              >
+                must be 3 character or more
+                <br />
+                You can use only [a-z 0-9 @ # $ & -]
+              </div>
+
+              <!-- =====================/ Sign Up Button /===================== -->
+              <span id="signUp" class="mt-5 px-5 rounded-1 py-1 shadow mb-4"
+                >Sign up</span
+              >
+
+              <!-- =====================/ Alerts for user /===================== -->
+              <div id="createDone" class="alert alert-success d-none">
+                Done, successful creation account !!<br />
+                Now You can sign-in
+              </div>
+              <div id="missInputs" class="alert alert-danger d-none">
+                Please, fill all inputs as written below
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--=====================/ Bootstrap js link /===================== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--=====================/ Font Awesome js link /===================== -->
+    <script src="js/all.min.js"></script>
+    <!--=====================/ Main js link /===================== -->
+    <script src="js/signup.js"></script>
+  </body>
+</html>
